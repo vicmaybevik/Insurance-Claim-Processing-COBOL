@@ -6,32 +6,31 @@
     Insurance companies face a massive issue in maintaining records and running their billing systems efficiently. They cater to thousands (sometimes even lakhs) of customers and so, they require an efficient system to manage their records,           bills, etc. One of the areas where insurance companies feel the need for an efficient system the most is processing claims. So, in this project, you’d build a mainframe solution for processing claims for an insurance company. The system would     take input, validate, filter, and adjudicate the claims. Then it’ll produce reports from NH/ME/CT. 
 
 #Main tasks:
-    Perform technical reviews of the system
-    Prepare a detailed design for your proposed system and create its specification documentation
-    Prepare COBOL standards document, which explains the required changes in code
+    Perform technical reviews of the system.
+    Prepare a detailed design for your proposed system and create its specification documentation.
+    Prepare COBOL standards document, which explains the required changes in code.
 
 #setup instructions:
-    Choose your operating system in which you will run the program
+    Choose your operating system in which you will run the program.
     Download the GnuCOBOL installer:Go to https://sourceforge.net/projects/gnucobol/files/gnucobol/ 
-    Click on the most recent version folder
-    Download the .exe file (e.g., "gnucobol-3.1.2-64bit-MinGW-setup.exe")
-    Verify the installation: Open Command Prompt (you can search for "cmd" in the Start menu)
-    Type cobc --version and press Enter
-    If you see version information, the installation was successful.
+    Click on the most recent version folder.
+    Download the .exe file (e.g., "gnucobol-3.1.2-64bit-MinGW-setup.exe").
+    Verify the installation: Open Command Prompt (you can search for "cmd" in the Start menu).
+    Type cobc --version and press Enter. If you see version information, the installation was successful.
     "this is a simplified COBOL environment for learning and small-scale development. It doesn't replicate a full mainframe environment with CICS, JCL, and DB2 that you'd use in a professional setting."
     As a Mac user terminal, geany and vs code were very helpful and effective.
 
 #Cobol code:
     Create a new COBOL file: 
-    Open your preferred text editor(Eg virtual studio code VS code, Sublime text, atom.)
+    Open your preferred text editor(Eg virtual studio code VS code, Sublime text, atom.).
     Understand and know the project requirements for this code, Read through the project description carefully. try understanding the main components: input processing, validation, filtering, adjudication, and reporting.
     articles that helped me with this. [https://www.upgrad.com/blogmainframe-projects-ideas-topics-for-beginners/], [https://1000projects.org/projects/mainframe-projects], [https://brew.sh/], [https://chatgpt.com/].
-    Identify the specific states involved (NH/ME/CT)
+    Identify the specific states involved (NH/ME/CT).
     understand the system analysis, which includes creating a document that states the current issues in the insurance industry, list the goal of the new system that you want to implement.
     Begin with technical aspects, which can be documenting and researching on findings.
     Create a detailed design which can be drawing a flowchart of the entire claim processing system. i was able to do this easily with the help of this website. [https://app.diagrams.net/]
     Design the data structures which willbe implemented in your code, If youre a fellow NIU computer student you should be some what familiar with this topic.
-    Plan the code structure (main program and subprograms)
+    Plan the code structure (main program and subprograms).
     Here's a basic structure to start with:
 
         IDENTIFICATION DIVISION. //This names your program
@@ -76,15 +75,17 @@
         300-FINALIZE.
             CLOSE CLAIM-FILE.
 
-    Develop COBOL standards
-    create documentation with various tests
-    also utilize JCL to compile and run your GNUcobol code
-    develop a system test plan
-    track issues you encountered along the way (optional)
-    project organization
-    Research if you're having additional issues.
+
+
+Develop COBOL standards.
+create documentation with various tests.
+also utilize JCL to compile and run your GNUcobol code.
+develop a system test plan.
+track issues you encountered along the way (optional).
+project organization.
+Research if you're having additional issues.
 
 #Key learnings or challenges overcome:
      Syntax errors in 210-VALIDATE-CLAIM and 220-ADJUDICATE-CLAIM paragraphs were hard to get around.
-     All claims were being rejected it was fixed by reworking on the validation logic and the format of  input data
-     No claims are being counted for any state which was fixed by makibg sure the code and the claims.dat file match with terms of input data.
+     All claims were being rejected it was fixed by reworking on the validation logic and the format of input data.
+     No claims are being counted for any state which was fixed by making sure the code and the claims.dat file match with terms of input data.
