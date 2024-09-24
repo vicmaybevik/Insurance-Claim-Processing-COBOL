@@ -1,16 +1,16 @@
-#user info
-    Hello! My name is Victor Taiwo, i am Northern Illinois University student studying computer science with a focus on mainframe programming. projects on cobol and mainframe are important to me because of the versatility and consolidation benefits a mainframe system offers, it's also extremely efficient and adapts to new technology pretty well. My skills are currrently intermidate but will improve over time. Thanks for checking my code.
+#user info:
+    Hello! My name is Victor Taiwo, i am Northern Illinois University student studying computer science with a focus on mainframe programming. projects on cobol and mainframe are important to me because of the versatility and consolidation            benefits a mainframe system offers, it's also extremely efficient and adapts to new technology pretty well. My skills are currrently intermidate but will improve over time. Thanks for checking my code.
 
 
-#Project overview
-    Insurance companies face a massive issue in maintaining records and running their billing systems efficiently. They cater to thousands (sometimes even lakhs) of customers and so, they require an efficient system to manage their records, bills, etc. One of the areas where insurance companies feel the need for an efficient system the most is processing claims. So, in this project, you’d build a mainframe solution for processing claims for an insurance company. The system would take input, validate, filter, and adjudicate the claims. Then it’ll produce reports from NH/ME/CT. 
+#Project overview:
+    Insurance companies face a massive issue in maintaining records and running their billing systems efficiently. They cater to thousands (sometimes even lakhs) of customers and so, they require an efficient system to manage their records,           bills, etc. One of the areas where insurance companies feel the need for an efficient system the most is processing claims. So, in this project, you’d build a mainframe solution for processing claims for an insurance company. The system would     take input, validate, filter, and adjudicate the claims. Then it’ll produce reports from NH/ME/CT. 
 
-#Main tasks
+#Main tasks:
     Perform technical reviews of the system
     Prepare a detailed design for your proposed system and create its specification documentation
     Prepare COBOL standards document, which explains the required changes in code
 
-#setup instructions 
+#setup instructions:
     Choose your operating system in which you will run the program
     Download the GnuCOBOL installer:Go to https://sourceforge.net/projects/gnucobol/files/gnucobol/ 
     Click on the most recent version folder
@@ -21,7 +21,7 @@
     "this is a simplified COBOL environment for learning and small-scale development. It doesn't replicate a full mainframe environment with CICS, JCL, and DB2 that you'd use in a professional setting."
     As a Mac user terminal, geany and vs code were very helpful and effective.
 
-#Cobol code
+#Cobol code:
     Create a new COBOL file: 
     Open your preferred text editor(Eg virtual studio code VS code, Sublime text, atom.)
     Understand and know the project requirements for this code, Read through the project description carefully. try understanding the main components: input processing, validation, filtering, adjudication, and reporting.
@@ -84,7 +84,7 @@
     project organization
     Research if you're having additional issues.
 
-#Key learnings or challenges overcome
-    Syntax errors in 210-VALIDATE-CLAIM and 220-ADJUDICATE-CLAIM paragraphs were hard to get around.
+#Key learnings or challenges overcome:
+     Syntax errors in 210-VALIDATE-CLAIM and 220-ADJUDICATE-CLAIM paragraphs were hard to get around.
      All claims were being rejected it was fixed by reworking on the validation logic and the format of  input data
      No claims are being counted for any state which was fixed by makibg sure the code and the claims.dat file match with terms of input data.
